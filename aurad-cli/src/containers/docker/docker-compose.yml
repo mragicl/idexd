@@ -23,7 +23,7 @@ services:
         entrypoint: /bin/parity
         user: root
     mysql:
-        image: mysql:5.7
+        image: biarms/mysql
         env_file: aurad_config.env
         volumes:
             - type: bind
@@ -34,7 +34,7 @@ services:
         ports:
             - "127.0.0.1:33006:3306"
     idexd:
-        image: idexio/idexd:0.2.0
+        image: mragicl/idexd:0.2.0
         depends_on:
           - "mysql"
         volumes:
