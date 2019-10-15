@@ -24,13 +24,9 @@ You will need > 20GB of disk space, so get a large memory card.
 ### Software
 
 * Tested with Raspbian GNU/Linux 10 (buster)
-* Docker CE 18.09 ([Installation Guide](https://docs.docker.com/install/linux/docker-ce/ubuntu/))
-* Docker Compose 1.17.1 ([Installation Guide](https://docs.docker.com/compose/install/))
-* nvm ([Installation Guide](https://github.com/creationix/nvm))
-* Node.js 10.15.0, npm 6.4.1 ([Installation Guide](https://github.com/creationix/nvm#usage))
-* Git 17.1 ([Installation Guide](https://git-scm.com/downloads))
+* All dependencies are installed as described below. Please start with a freshly install copy of Rasbpian Buster image.
 
-IDEXd is designed to support a wide range of systems, but for the beta we recommend sticking to these requirements and versions.
+
 
 ## Getting IDEXd
 
