@@ -1,6 +1,6 @@
 # IDEXd: IDEX Staking Tier 3 [beta]
 # TEST VERSION FOR A RASPBERRY PI 
-**Note: IDEXd is the [official successor](https://medium.com/idex/aurora-dao-rebranding-to-idex-9611e5ef810f) of AuraD and provides the same functionality and services based on the IDEX token. AuraD is no longer supported. Please [see below](#Upgrading-from-AuraD-to-IDEXd) for instructions on upgrading from AuraD to IDEXd.**
+
 
 ## Introduction
 
@@ -38,10 +38,10 @@ IDEXd is distrbuted via the @idexio/idexd-cli npm package with dependencies on D
 
 ## Getting Started
 
-All of the requrements provide first-rate installation documentation, but we've collected the key steps to get up-and-running here. Start with a freshly installed copy of   Raspbian GNU/Linux 10 (buster).
+All of the requrements provide first-rate installation documentation, but we've collected the key steps to get up-and-running here. Start with a freshly installed copy of Raspbian GNU/Linux 10 (buster). Remark: Raspbian Buster Light suffices.
 
 
-### Install Docker CE
+### Install Docker
 
 1. Update packages
 ```
@@ -50,7 +50,7 @@ sudo apt upgrade
 ```
 2. Install dependencies that allow `apt` to install packages via https
 ```
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common git
 ```
 3. Install docker from docker.com:
 ```
@@ -79,6 +79,15 @@ sudo usermod -aG docker ${USER}
 ```
 6. Log out and log back in and `docker` [commands](https://docs.docker.com/) will be available from the prompt
 
+### Install Docker Compose
+1. Install dependencies
+```
+sudo apt-get install libffi-dev python python-pip
+```
+2. Install docker compose with apt:
+```
+sudo apt-get install docker-compose
+```
 
 ### Install nvm, Node.js & npm
 
