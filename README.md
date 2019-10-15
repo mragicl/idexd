@@ -190,6 +190,9 @@ IDEXd is licensed under the [GNU Lesser General Public License v3.0](https://www
 
 ### Sponsoring
 This is just a little update to make idexd work for the raspberry pi. 
+
 ETH: 0x6c54eA14109f3E97cdfC02b0C5AbE88e190BDf18 Bitcoin: 35N7cEkjiKGrMyETDU61KBtWWc7wRBYAXv
+
 IOTA: 9PDEUUFUTPLBNGORASBZGYXLWC9KLWWPGZFF9T9AHUKMLHHEVDWJJDUNXFJNADDHKT9ZKCNCVEY9MJRTZEWUHGASKY
+
 BTC: 35N7cEkjiKGrMyETDU61KBtWWc7wRBYAXv
