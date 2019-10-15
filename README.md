@@ -106,7 +106,7 @@ npm install -g @idexio/idexd-cli
 2. Get the patch needed to make @idexio/idex-cli work for a raspberry pi with armhf architecture:
 ```
 cd ~/
-wget https://raw.githubusercontent.com/mragicl/idexd/master/patch/0001_RPI.patch -o 0001_RPI.patch
+wget https://raw.githubusercontent.com/mragicl/idexd/master/patch/0001_RPI.patch
 cd ~/.nvm/versions/node/v10.15.3/lib/node_modules/@idexio/idexd-cli/
 patch -s -p0 < ~/0001_RPI.patch
 ```
