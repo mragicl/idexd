@@ -1,0 +1,21 @@
+diff -ru src/containers/docker/docker-compose.yml /home/pi/idexd/IDEXd/aurad-cli/src/containers/docker/docker-compose.yml
+--- src/containers/docker/docker-compose.yml	2019-10-15 21:33:50.256067701 +0200
++++ /home/pi/idexd/IDEXd/aurad-cli/src/containers/docker/docker-compose.yml	2019-10-15 18:00:40.995956730 +0200
+@@ -23,7 +23,7 @@
+         entrypoint: /bin/parity
+         user: root
+     mysql:
+-        image: mysql:5.7
++        image: biarms/mysql
+         env_file: aurad_config.env
+         volumes:
+             - type: bind
+@@ -34,7 +34,7 @@
+         ports:
+             - "127.0.0.1:33006:3306"
+     idexd:
+-        image: idexio/idexd:0.2.0
++        image: mragicl/idexd:0.2.0
+         depends_on:
+           - "mysql"
+         volumes:
