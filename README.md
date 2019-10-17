@@ -125,7 +125,13 @@ IDEXd provides prompts asking for a staking wallet that contains at least 10,000
 
 IDEXd employs a cold-wallet design so that staked funds never need to leave the staking wallet for maximum security.
 
-4. Sync your IDEX Node and start serving traffic. Remark: idex comes with parity. I was not able to make it run on the raspberry pi 4, so I used a rpc endpoint from infura:
+4. Get the raspberry pi compatible idexd docker container:
+```
+docker pull mragicl/idexd
+```
+
+
+5. Sync your IDEX Node and start serving traffic. Remark: idex comes with parity. I was not able to make it run on the raspberry pi 4, so I used a rpc endpoint from infura:
 ```
 idex start --rpc <RPC endpoint URL including port>
 ```
